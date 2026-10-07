@@ -1,29 +1,7 @@
-# Validation obligations
+# Validation
 
-The scaffold supplies generic package/release validation and regression fixtures. Add domain-specific tests and regressions.
+Tests exercise owned source/scope/contract/evidence checks, missing authority, stale/UNKNOWN/conflict, prohibited effects, migration recovery, normalization evidence and idempotency conflicts. Agent Plugins/schema, Skill, links, portable safety/archive and canonical-license checks are independent packaging gates.
 
-Capability regressions should prove bounded amendments of healthy authoritative artifacts, deep-path escalation, preservation of unrelated valid artifacts/evidence, targeted invalidation/revalidation, and independent gate ownership. Assert semantic obligations or observable behavior rather than rigid prose sentences unless exact wording is the contract. Adapt these cases to the capability; do not embed provider-specific policy in generic package validation.
+Run bootstrap, doctor, test, ci:fast; commit before release:check and Ecosystem plugin:certify-thin. No optional CHECKSUMS manifest is retained. No maintenance portability changes: container parity is not required by this change.
 
-Report reusable durable execution/observation evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Independently inspect reused evidence and rerun affected checks plus mandatory invariants when changes invalidate it. This refinement does not reduce the formal gates below.
-
-Before first release:
-
-~~~text
-# after README.plugin.md -> README.md and placeholder replacement
-mise install
-mise run bootstrap
-# optional source diagnostic; not a release gate
-pnpm run checksums:generate
-mise run doctor
-mise run validate
-mise run test
-mise run ci:fast
-mise run ci:extended
-mise run jobs:local
-# commit candidate
-mise run release:check
-~~~
-
-Also run `skills-ref validate` for each skill when available.
-
-No placeholder token or scaffold-only `README.plugin.md` may remain in the release candidate.
+Provider/host integration, physical storage authorization/normalization enforcement, private organization binding, full domain E2E and Operator E2E are NOT_RUN. Tests are synthetic deterministic planning regressions and do not grant business authority or Production Ready.
