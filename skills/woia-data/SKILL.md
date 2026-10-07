@@ -1,55 +1,22 @@
 ---
 name: woia-data
-description: Generic Data governance and quality coordination through owned provider contracts.
+description: Coordinate scoped data agreements, source integrity, quality, normalization, migration and verifiable controls through competent owners and Data Governance. Ordinary capability reads/writes do not require a Data gateway.
 license: MIT
+metadata:
+  author: Turpial AI Academy
+  version: "0.5.0"
 ---
 
-# woia-data
+# Data department coordination
 
-## Operating flow
+Read [the generic contract](references/contract.md) before consequential governance, normalization, source conflict or migration work.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
+1. Recover intended use, organization/scope, accountable business owner, accepted versioned contracts and source authority. Separate evidence/inference/observation from accepted facts.
+2. Select relevant responsibilities: agreements, identity/source coherence, suitability, changes/migrations and integrity controls. These are proportional responsibilities, not five mandatory approval stages.
+3. Request bounded Data Governance contributions using Core v0.5.3 and receiver-owned Tasks/authority. Resolve Identity/domain resources through their owners without copying a department master or runtime.
+4. Preserve provenance/version/checksum, conflict and freshness. UNKNOWN and stale evidence require owned reconciliation. Preserve scoped intent under correlation keys; reconcile unknown outcomes before retry.
+5. Review 1NF-5NF/BCNF, candidate keys, accepted functional/multivalued/join dependencies, lossless reconstruction and enforceability separately. Samples do not prove normal form. Sector requirements come from the qualified domain contract.
+6. Coordinate change/import/migration through Software, Technology and competent business owners; preserve current permissions and external effects during recovery. Verify security, quality and integrity controls against accepted purpose.
+7. Report scoped findings, uncertainty, owner decisions and next owned action. Completion grants no business acceptance, contact, payment authority, runtime enforcement or Production Ready.
 
-## Purpose
-
-Coordinate accepted data agreements, identity/source integrity, suitability, migration and verifiable controls without universal business write authority.
-
-## Minimum sufficient evidence
-
-Use a bounded path when an authoritative existing artifact/evidence set is healthy and the requested change is local and understood:
-
-1. identify the artifact/evidence, source candidate, and affected surface;
-2. load only supporting context and references needed for that surface;
-3. amend or re-evaluate the smallest coherent unit;
-4. verify affected behavior plus mandatory cross-cutting invariants;
-5. preserve unrelated valid artifacts/evidence and report what changed.
-
-Use the deep path for a new artifact, unclear scope or contradictory evidence, public API/event/schema changes, persisted data/migrations, authentication/authorization/secrets/signing/trust boundaries, deployment/rollback/availability risk, cross-provider dependency restructuring, unhealthy or unfamiliar conventions, missing durable required evidence, or a failed invariant that invalidates reused evidence. Load the references/checklists needed by those triggers and retain all required safety validation.
-
-## Discover
-
-Inspect actual repository/system state before changing it. Locate authoritative artifacts/evidence and identify affected standards, constraints, supported platforms, integrations, and user requirements. Expand context when a dependency, uncertainty, or deep-path trigger requires it.
-
-## Decide
-
-Select the smallest strategy that satisfies the capability. Preserve healthy existing standards. Do not infer policy from the author's workspace.
-
-## Implement
-
-Apply only authorized changes. Keep domain semantics independent from unrelated tooling.
-
-## Validate
-
-Run capability-appropriate checks and verify changed state. Reuse evidence only when it is durable, inspectable evidence of actual execution/observation with an identifiable candidate, checked surface, relevant inputs/environment, and outcome. Independently establish that it satisfies the gate being owned; prose claims or recollection are not execution evidence.
-
-A later mutation invalidates the checks whose coverage or inputs it affects. Rerun those checks and mandatory related invariants; preserve unaffected valid evidence. Reuse expensive runtime verification across an unchanged candidate and relevant environment. A new turn/session alone does not invalidate evidence. Execute or observe relevant checks when required evidence cannot be inspected or established. Skipped/unavailable checks are not PASS.
-
-## Report
-
-Report current state, source candidate, affected surface, decisions, changes, and exact usage/maintenance commands. Distinguish reusable evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Include remaining risks and uncertainties.
-
-## Detailed references
-
-Add focused files under `references/` only when more detail is needed and give each reference a concrete scope/risk/ambiguity load trigger. Load triggered safety references; a bounded amendment does not require every reference or full template replay. Add scripts/assets only when they materially improve deterministic execution.
+[review-plan.mjs](scripts/review-plan.mjs) supplies pure deterministic evaluation/request guards for regression. It neither executes providers nor persists business state. [Review envelope](references/review.schema.json) describes input structure; semantic guards remain separate.

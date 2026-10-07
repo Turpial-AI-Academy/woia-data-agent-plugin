@@ -1,42 +1,7 @@
-# woia-data
+# WOIA Data v0.5.0
 
-Portable Agent Plugin for Generic Data governance and quality coordination through owned provider contracts..
+Generic department orchestrator for accepted data agreements, coherent identity/source relationships, suitability, changes/imports/migrations and verifiable integrity controls. Hard runtime dependency: woia-core >=0.5.3. No Real Estate delta, backend or universal write/read service.
 
-## Capability
+Start with skills/woia-data/SKILL.md and its generic contract. Data Governance performs provider evaluations; Identity and Domain Contracts retain their resources. Business owners, Finance and Legal retain competent acceptance. Pure request/review guards do not execute effects or prove storage enforcement.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
-
-The plugin adapts to the repository it operates on without requiring the consumer to adopt WOIA's authoring toolchain.
-
-## Portable package
-
-~~~text
-plugin.json
-README.md
-CHANGELOG.md
-LICENSE
-skills/**
-# optional source diagnostic when retained by the repository
-CHECKSUMS.sha256
-~~~
-
-`CHECKSUMS.sha256` is optional source evidence, not a required portable/release artifact.
-
-Add `mcp.json` only if the capability genuinely requires MCP.
-
-## Consumer requirements
-
-Document only genuine capability/runtime requirements here. Do not list maintenance Node/pnpm/Mise/Docker unless the portable capability itself truly needs them.
-
-## Development
-
-~~~text
-mise install
-mise run bootstrap
-mise run doctor
-mise run ci:fast
-mise run ci:extended
-mise run release:check
-~~~
+Maintenance: mise trust; mise install; mise run bootstrap; mise run doctor; mise run test; mise run ci:fast. After committing an exact clean candidate run mise run release:check and official Ecosystem v0.5.4 plugin:certify-thin. Optional checksums are not a release requirement. See VALIDATION.md. No MCP adapter is required by this generic method.
