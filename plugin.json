@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "woia-data",
+  "version": "0.5.0",
+  "description": "Generic Data governance and quality coordination through owned provider contracts.",
+  "author": {
+    "name": "Turpial AI Academy",
+    "url": "https://github.com/Turpial-AI-Academy"
+  },
+  "homepage": "https://github.com/Turpial-AI-Academy/woia-data-agent-plugin",
+  "repository": "https://github.com/Turpial-AI-Academy/woia-data-agent-plugin",
+  "license": "MIT",
+  "keywords": ["agent-plugin", "woia-data"]
+}
