@@ -1,6 +1,6 @@
-# WOIA Data v0.5.6
+# WOIA Data v0.5.7
 
-Generic department orchestrator for accepted data agreements, coherent identity/source relationships, suitability, changes/imports/migrations and verifiable integrity controls. Hard runtime dependency: woia-core >=0.5.6. No Real Estate delta, backend or universal write/read service.
+Generic department orchestrator for accepted data agreements, coherent identity/source relationships, suitability, changes/imports/migrations and verifiable integrity controls. Hard runtime dependency: woia-core >=0.5.7. No Real Estate delta, backend or universal write/read service.
 
 Start with skills/woia-data/SKILL.md and its generic contract. Data Governance performs provider evaluations; Identity and Domain Contracts retain their resources. Business owners, Finance and Legal retain competent acceptance. Pure request/review guards do not execute effects or prove storage enforcement.
 
