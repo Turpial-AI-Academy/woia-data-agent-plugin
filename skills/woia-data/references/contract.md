@@ -1,6 +1,5 @@
 # Generic Data contract
 
-Source: WOIA Real Estate coordination commit b716f1d1c0e2bc5ecf946043b337a2ddba4285f0, ADR-0024, docs18/19/21/22/24/25/26. This package carries the generic method; no runtime dependency on the temporary construction repository.
 
 Five bounded responsibilities: recover applicable accepted agreements; maintain coherent identities/source relationships; establish suitability for intended use; coordinate changes/imports/migrations; resolve integrity problems and sustain verifiable controls. Apply proportionally, not as mandatory approval stages. Ordinary authorized capability operations proceed directly. Data is not a universal writer, routine-read proxy, business-state master or source of Finance/Legal acceptance.
 
