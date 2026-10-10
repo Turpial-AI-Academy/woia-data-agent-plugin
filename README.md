@@ -1,4 +1,4 @@
-# WOIA Data v0.5.8
+# WOIA Data v0.5.9
 
 Generic department orchestrator for accepted data agreements, coherent identity/source relationships, suitability, changes/imports/migrations and verifiable integrity controls. Hard runtime dependency: woia-core >=0.5.7. Business owners retain source facts and competent acceptance.
 

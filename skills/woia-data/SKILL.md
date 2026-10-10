@@ -4,7 +4,7 @@ description: Coordinate scoped data agreements, source integrity, quality, norma
 license: MIT
 metadata:
   author: Turpial AI Academy
-  version: "0.5.8"
+  version: "0.5.9"
 ---
 
 # Data department coordination

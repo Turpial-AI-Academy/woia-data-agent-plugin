@@ -1,6 +1,6 @@
 {
   "schema": "dev.woia.department-orchestrator/v1",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "department": "data",
   "execution_model": "core-task-provider-coordination",
   "requires_plugins": [
