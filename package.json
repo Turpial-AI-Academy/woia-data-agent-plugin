@@ -1,7 +1,7 @@
 {
   "name": "woia-data-agent-plugin-repo",
   "private": true,
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "Repository maintenance tooling for the woia-data portable Agent Plugin.",
   "type": "module",
   "engines": {
@@ -12,6 +12,7 @@
     "bootstrap": "node scripts/bootstrap.mjs",
     "doctor": "node scripts/doctor.mjs",
     "validate": "node scripts/validate-plugin.mjs",
+    "test": "node --test tests/*.test.mjs",
     "checksums:generate": "node scripts/generate-checksums.mjs",
     "checksums:check": "node scripts/check-checksums.mjs",
     "ci:fast": "node scripts/ci-fast.mjs",

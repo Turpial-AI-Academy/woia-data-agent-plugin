@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:woia:normalization-contract:v1",
+  "title": "Accepted host normalization contract",
+  "description": "Immutable typed source resolved by the trusted host; request JSON cannot supply this policy.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "revision",
+    "source_ref",
+    "org_id",
+    "scope",
+    "relation",
+    "target"
+  ],
+  "properties": {
+    "schema": {
+      "const": "dev.woia.normalization-contract/v1"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "org_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "enum": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "BCNF",
+        "4NF",
+        "5NF"
+      ]
+    }
+  }
+}
